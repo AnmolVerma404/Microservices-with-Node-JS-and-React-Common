@@ -15,7 +15,7 @@ export enum OrderStatus {
 	AwaitingPayment = 'awaiting:payment',
 	/**
 	 * The order has reserved successfully,
-	 * The user has provided the payment successfully.
+	 * The user has provided payment successfully.
 	 */
 	Complete = 'complete',
 }
