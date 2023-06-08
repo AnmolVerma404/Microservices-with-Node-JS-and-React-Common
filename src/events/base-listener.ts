@@ -7,7 +7,9 @@ interface Event {
 }
 
 /**
- * abstract class will be defined in sub class of Listener
+ * Abstract class will be defined in sub class of Listener
+ * The T in T extends Event is a generic type parameter. It allows the Listener class to be used with any type of event that extends the Event interface. This makes the Listener class more reusable and flexible.
+ * For Eg - If we are extending listener class the generic type T can be parametrized by TicketCreatedEvent code => export class TicketCreatedListener extends Listener<TicketCreatedEvent>{}
  */
 export abstract class Listener<T extends Event> {
 	abstract subject: T['subject'];

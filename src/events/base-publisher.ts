@@ -30,7 +30,7 @@ export abstract class Publisher<T extends Event> {
 				if (err) {
 					return reject(err);
 				}
-				console.log('Event Published');
+				console.log('Event published to subject', this.subject);
 				resolve();
 			});
 		});
