@@ -49,5 +49,6 @@ export const currentUser = (
 		// new reqCU(payload.email, payload.id); // This will not work as need to access this from almost everywhere
 		req.currentUser = payload;
 	} catch (err) {}
+
 	next();
 };
